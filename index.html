@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mario AI Chatbot — API Endpoint</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:radial-gradient(ellipse at top,#0a1428 0%,#06070d 100%);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;line-height:1.6}
+.box{max-width:680px;text-align:center}
+h1{font-size:1.8rem;background:linear-gradient(135deg,#00d4ff,#00ff88);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px}
+p{color:rgba(255,255,255,.7);font-size:.95rem;margin-bottom:14px}
+.tag{display:inline-block;background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.3);color:#00d4ff;padding:6px 14px;border-radius:50px;font-size:.7rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+code{background:rgba(0,212,255,.08);color:#00d4ff;padding:3px 8px;border-radius:5px;font-family:'JetBrains Mono',monospace;font-size:.85rem}
+.test{margin-top:24px;padding:18px;background:rgba(0,0,0,.3);border:1px solid rgba(0,212,255,.2);border-radius:12px;text-align:left;font-family:monospace;font-size:.78rem;color:rgba(255,255,255,.85)}
+.test b{color:#00ff88}
+a{color:#00d4ff}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="tag">⚡ API ENDPOINT</div>
+  <h1>Mario AI Chatbot</h1>
+  <p>Endpoint serverless untuk chatbot AI Mario Automation. Halaman ini tidak ditujukan untuk diakses langsung — endpoint untuk POST request dari widget chat di <a href="https://marioautomation.com">marioautomation.com</a>.</p>
+
+  <div class="test">
+    <b>POST /api/chat</b><br>
+    Content-Type: application/json<br>
+    <br>
+    {<br>
+    &nbsp;&nbsp;"message": "berapa harga paket pemula?",<br>
+    &nbsp;&nbsp;"history": []<br>
+    }<br>
+    <br>
+    <b>→ Response:</b><br>
+    {<br>
+    &nbsp;&nbsp;"reply": "Paket Pemula Rp 2.999.000 untuk 3 saluran...",<br>
+    &nbsp;&nbsp;"usage": { "prompt_tokens": 1400, "completion_tokens": 89 }<br>
+    }
+  </div>
+
+  <p style="margin-top:24px;font-size:.78rem;opacity:.55">Powered by Cloudflare Workers AI · Llama 3.3 70B · Free 10K neurons/day</p>
+</div>
+</body>
+</html>

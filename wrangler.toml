@@ -1,0 +1,10 @@
+# Cloudflare Pages config (for documentation / wrangler local dev)
+# Catatan: untuk Cloudflare Pages, AI binding diset via dashboard
+# (Settings > Functions > Bindings > Add binding > Workers AI > variable name "AI")
+
+name = "mario-ai-chatbot"
+compatibility_date = "2026-05-26"
+pages_build_output_dir = "."
+
+# Untuk local dev:
+# npx wrangler pages dev . --ai AI
